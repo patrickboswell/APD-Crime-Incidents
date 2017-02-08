@@ -11,7 +11,7 @@ First Slide
 - Manipulate data for pareto chart
 - Plot pareto chart by Criminal Type
 
-Slide With Code
+Data Manipulation
 ========================================================
 
 
@@ -29,7 +29,12 @@ APData <- APData[,1:2] %>%
   mutate(cusum = cumsum(percent))
 
 APData$Crime.Type <- factor(APData$Crime.Type, levels = unique(APData$Crime.Type))
+```
 
+Interactive Plot Code
+========================================================
+
+```r
 pplot <- plot_ly(APData) %>%
   add_trace(x = ~Crime.Type, y = ~n, type = 'bar', name = 'Incidents',
             marker = list(color = '#C9EFF9'),
@@ -46,11 +51,11 @@ pplot <- plot_ly(APData) %>%
          autosize = T)
 ```
 
-Slide With Plot
+Pareto Plot of APD Crime Incidents
 ========================================================
 
 
 
 ```
-Error in loadNamespace(name) : there is no package called 'webshot'
+Error in file(con, "rb") : cannot open the connection
 ```
