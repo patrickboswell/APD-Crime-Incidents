@@ -54,6 +54,10 @@ pplot <- plot_ly(APData) %>%
 Pareto Plot of APD Crime Incidents
 ========================================================
 
+Due to this error I created it as a URL for you to view:
+
+[Plot Link](https://patrickboswell.github.io/APD-Crime-Incidents/APD%20Crime%20Incidents.html)
+
 
 
 ```

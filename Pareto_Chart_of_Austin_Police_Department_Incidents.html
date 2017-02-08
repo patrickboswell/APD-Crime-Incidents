@@ -804,7 +804,7 @@ hljs.initHighlightingOnLoad();
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Slide With Code</h3>
+<h3>Data Manipulation</h3>
 <div class="slideContent" >
 <pre><code class="r">library(plotly)
 library(RSocrata)
@@ -819,8 +819,15 @@ APData &lt;- APData[,1:2] %&gt;%
   mutate(cusum = cumsum(percent))
 
 APData$Crime.Type &lt;- factor(APData$Crime.Type, levels = unique(APData$Crime.Type))
+</code></pre>
 
-pplot &lt;- plot_ly(APData) %&gt;%
+</div>
+
+</section>
+<section data-transition="linear" data-transition-speed="default">
+<h3>Interactive Plot Code</h3>
+<div class="slideContent" >
+<pre><code class="r">pplot &lt;- plot_ly(APData) %&gt;%
   add_trace(x = ~Crime.Type, y = ~n, type = &#39;bar&#39;, name = &#39;Incidents&#39;,
             marker = list(color = &#39;#C9EFF9&#39;),
             hoverinfo = &quot;text&quot;,
@@ -840,9 +847,13 @@ pplot &lt;- plot_ly(APData) %&gt;%
 
 </section>
 <section data-transition="linear" data-transition-speed="default">
-<h3>Slide With Plot</h3>
+<h3>Pareto Plot of APD Crime Incidents</h3>
 <div class="slideContent" >
-<pre><code>Error in loadNamespace(name) : there is no package called &#39;webshot&#39;
+<p>Due to this error I created it as a URL for you to view:</p>
+
+<p><a href="https://patrickboswell.github.io/APD-Crime-Incidents/APD%20Crime%20Incidents.html">Plot Link</a></p>
+
+<pre><code>Error in file(con, &quot;rb&quot;) : cannot open the connection
 </code></pre>
 
 </div>
